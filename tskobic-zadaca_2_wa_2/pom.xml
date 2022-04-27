@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.foi.nwtis.tskobic</groupId>
-	<artifactId>tskobic-zadaca_2_wa_1</artifactId>
+	<artifactId>tskobic-zadaca_2_wa_2</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
-	<name>tskobic-zadaca_2_wa_1</name>
+	<name>tskobic-zadaca_2_wa_2</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
@@ -17,18 +17,17 @@
 		<ServerEE.hostname>localhost</ServerEE.hostname>
 		<ServerEE.domainName>domain1</ServerEE.domainName>
 
-		
 		<ServerEE.glassfish.home>/opt/glassfish6/</ServerEE.glassfish.home>
 		<ServerEE.glassfish.Web.home>/opt/glassfish6-web/</ServerEE.glassfish.Web.home>
 		<ServerEE.glassfish.containerName>glassfish6x</ServerEE.glassfish.containerName>
 		<ServerEE.payara.home>/opt/payara5/</ServerEE.payara.home>
 		<ServerEE.payara.Web.home>/opt/payara5-web/</ServerEE.payara.Web.home>
 		<ServerEE.payara.containerName>payara</ServerEE.payara.containerName>
-		
+
 		<ServerEE.home>${ServerEE.payara.Web.home}</ServerEE.home>
 		<ServerEE.domainDir>${ServerEE.home}/glassfish/domains</ServerEE.domainDir>
 		<ServerEE.containerName>${ServerEE.payara.containerName}</ServerEE.containerName>
-		
+
 		<!--
 		<ServerEE.glassfish.home>C:\\glassfish6\\</ServerEE.glassfish.home>
 		<ServerEE.glassfish.Web.home>C:\\glassfish6-web\\</ServerEE.glassfish.Web.home>
@@ -188,7 +187,6 @@
 			</build>
 		</profile>
 	</profiles>
-
 	<dependencies>
 		<dependency>
 			<groupId>jakarta.platform</groupId>
@@ -196,24 +194,24 @@
 			<version>9.1.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.glassfish.web</groupId>
-			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+			<groupId>jakarta.mvc</groupId>
+			<artifactId>jakarta.mvc-api</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.krazo</groupId>
+			<artifactId>krazo-core</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.krazo</groupId>
+			<artifactId>krazo-jersey</artifactId>
 			<version>2.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.22</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>2.6.1</version>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.28</version>
 		</dependency>
 		<dependency>
 			<groupId>org.foi.nwtis</groupId>
@@ -224,6 +222,11 @@
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>2.9.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+			<version>2.0.0</version>
 		</dependency>
 	</dependencies>
 </project>
