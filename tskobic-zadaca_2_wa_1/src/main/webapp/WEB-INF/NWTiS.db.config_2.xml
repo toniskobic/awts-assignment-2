@@ -12,8 +12,8 @@
 <entry key="jdbc.mysql">com.mysql.cj.jdbc.Driver</entry>
 <entry key="jdbc.derby">org.apache.derby.jdbc.ClientDriver</entry>
 <entry key="jdbc.hsqldb.hsql">org.hsqldb.jdbcDriver</entry>
-<entry key="LocationIQ.token">xxxxxx</entry>
-<entry key="OpenWeatherMap.apikey">xxxxx</entry>
+<entry key="LocationIQ.token"></entry>
+<entry key="OpenWeatherMap.apikey"></entry>
 <entry key="OpenSkyNetwork.korisnik"></entry>
 <entry key="OpenSkyNetwork.lozinka"></entry>
 <entry key="dnevnik.datoteka">NWTiS_dnevnik.txt</entry>
