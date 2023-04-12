@@ -1,9 +1,9 @@
 #NWTiS 2022.
 #Sun May 08 01:26:04 CEST 2022
 preuzimanje.do=31.12.2022
-LocationIQ.token=***REMOVED***
+LocationIQ.token=
 jdbc.derby=org.apache.derby.jdbc.ClientDriver
-OpenWeatherMap.apikey=***REMOVED***
+OpenWeatherMap.apikey=
 dnevnik.datoteka=NWTiS_dnevnik.txt
 ciklus.korekcija=10
 user.username=nwtis_g1
